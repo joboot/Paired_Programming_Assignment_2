@@ -24,7 +24,7 @@ while user_input.lower() == 'y':
         if 0 < rained_allocation_depth:
             break
         else:
-            print('Invalid value. Please enter again.')
+            print(f'{"Invalid value. Please enter again.":>55}')
 
     # while true loop for area being irrigated input (Jordan)
     while True:
@@ -34,7 +34,7 @@ while user_input.lower() == 'y':
         if 0 < irrigated_area:
             break
         else:
-            print('Invalid value. Please enter again.')
+            print(f'{"Invalid value. Please enter again.":>55}')
 
     # while true loop for average rate of flow input (Jordan)
     while True:
@@ -44,7 +44,7 @@ while user_input.lower() == 'y':
         if 0 < average_flow_rate:
             break
         else:
-            print('Invalid value. Please enter again.')
+            print(f'{"Invalid value. Please enter again.":>55}')
 
     # calculation for the irrigation water allocation (Mackenzie)
     irrigation_water_allocation = round(18.857 * rained_allocation_depth * irrigated_area / average_flow_rate, 1)
